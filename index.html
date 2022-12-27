@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="app.js" defer></script>
   <title>weather app</title>
 </head>
 
@@ -15,14 +14,34 @@
     <div class="app-title">
       <p>Weather info</p>
       <input type="text" id="search" placeholder="Enter the city" autocomplete="off" />
+
+      <div class="location-icon">
+        <img src="icons/location.png" alt="location">
+      </div>
     </div>
-    <div class="temperature-value">
-      <p> *<p>C</p></p>
-    </div>
-    <div class="temperature-description">
-      <p>-</p>
+
+    <div class="notification"></div>
+    <div class="weather-container">
+      <div class="weather-icon">
+        <img src="icons/weather.png" alt="">
+      </div>
+
+
+      <div class="temperature-value">
+        <p> - *
+          <span>C</span>
+        </p>
+      </div>
+      <div class="temperature-description">
+        <p>-</p>
+      </div>
+      <div class="location">
+        <p>-</p>
+      </div>
     </div>
   </div>
+
+  <script src="app.js"></script>
 </body>
 
 </html>
